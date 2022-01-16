@@ -1,0 +1,163 @@
+:root{
+    --main: rgb(204, 204, 255);
+    --secondary: rgb(218, 218, 255);
+    --text: rgb(255,255,255);
+}
+
+@font-face{
+    font-family: Montserrat;
+    src: url(../fonts/montserrat.ttf);
+}
+
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: var(--main);
+    color: white;
+}
+
+*{
+    font-family: Montserrat;
+    color: var(--text);
+    -webkit-tap-highlight-color: transparent;
+}
+
+body, .nospace{
+    padding:0;
+    margin:0;
+}
+
+fullpage{
+    height:100%;
+    width:100%;
+    display:block;
+    position:relative;
+}
+
+ccenter{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+button{
+    border:none;
+    background:var(--text);
+    width:85vw;
+    padding:4vw;
+    font-size:5vw;
+    border-radius:1vh;
+    color:var(--main);
+}
+
+button.transparent{
+    background: rgba(0,0,0,0);
+    position:relative;
+    z-index:2;
+}
+
+input{
+    color: var(--text);
+    font-size:4vw;
+    border: none;
+    border-bottom: solid white 0.2vh;
+    width:80vw;
+    border-radius:0;
+    background:none;
+    outline: none;
+}
+
+input::placeholder{
+    color:var(--text);
+}
+
+.hidden{
+    display:none;
+}
+
+.thidden{
+    visibility: hidden;
+}
+
+button.openingbtnbg{
+    position:absolute;
+    z-index:1;
+    pointer-events: none;
+    top:0%;
+    left:50%;
+    transform:translate(-50%,0%);
+    transition:0.25s;
+    color:var(--text);
+}
+
+textarea#special:valid ~ ccenter div#btnwrapper button.openingbtnbg{
+    left:50%;
+    top:100%;
+    transform:translate(-50%,-100%);
+}
+
+button#signupbtn, button#loginbtn{
+    transition:0.1s;
+}
+
+textarea#special:valid ~ ccenter div#btnwrapper button#loginbtn, button#signupbtn{
+    color: var(--main);
+}
+
+textarea#special:valid ~ ccenter div#btnwrapper button#signupbtn, button#loginbtn{
+    color: var(--text);
+}
+
+#email{
+    opacity:1;
+    visibility:visible;
+    transition: 0.25s;
+}
+
+textarea#special:valid ~ ccenter div input#email {
+    opacity:0;
+    visibility:hidden;
+}
+
+a{
+    color: var(--text);
+    text-decoration:none;
+    font-size:3.5vh;
+}
+span{
+    outline: var(--main) 1px solid;
+    outline-style: inset;
+}
+
+circle{
+    background:transparent;
+    border: solid white 0.2vh;
+    border-radius:50vh;
+    height: 2vw;
+    width:2vw;
+    display:block;
+    margin:1vh;
+}
+
+textarea#circlecrtl:valid ~ div center circle#dark, circle#light {
+    background:white;
+}
+
+textarea#circlecrtl:valid ~ div center circle#light, circle#dark{
+    background:transparent;
+}
+
+historyelem{
+    display:block;
+    background: var(--secondary);
+    color: var(--text);
+    font-size: 2vh;
+    width:calc(100% - 4vh);
+    padding:2vh;
+    margin-bottom: 2vh;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+        <script src="js/socket.io.min.js"></script>
+        <script src="https://kit.fontawesome.com/137cf7420c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+        <script src="https://use.fortawesome.com/1ce05b4b.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Remedy</title>
+    </head>
+    <body>
+        <center style="position:absolute;width:100vw;position:relative;height:10vh;float:left;">
+            <img src="img/logo.png" alt="Remedy" style="position:relative;height:9vh;display:inline-block; margin: 0.75vh; top: 50%; transform: translateY(-50%);">
+            <h1 style="font-size: 4.5vh;display:inline-block;position:relative;transform:translate(0%,-150%); margin: 0.75vh; top: 50%;" class="nospace">R E M E D Y</h1>
+        </center>
+        <div id="histcontainer" style="display:block;position:absolute;top:10vh;padding:3vh;width:calc(100vw - 6vh);height: 74vh;overflow-y: scroll;">
+            <h2 class="nospace">History</h2>
+            <br>
+        </div>
+        <div class="nospace" style="position:fixed;bottom:0;width:100vw;height:10vh;background:var(--main);">
+            <ccenter style="left:25%;">
+                    <a href="history.html">history</a>
+            </ccenter>
+            <ccenter>
+                <a href="hub.html">
+                    <i class="fa-light fa-camera"></i>
+                </a>
+            </ccenter>
+            <ccenter style="left:75%;">
+                <a href="settings.html">settings</a>
+            </ccenter>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/history.js"></script>
+    </body>
+</html>

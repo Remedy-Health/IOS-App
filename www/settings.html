@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+        <script src="js/socket.io.min.js"></script>
+        <script src="https://kit.fontawesome.com/137cf7420c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+        <script src="https://use.fortawesome.com/1ce05b4b.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Remedy</title>
+    </head>
+    <body>
+        <center style="position:absolute;width:100vw;position:relative;height:10vh;float:left;">
+            <img src="img/logo.png" alt="Remedy" style="position:relative;height:9vh;display:inline-block; margin: 0.75vh; top: 50%; transform: translateY(-50%);">
+            <h1 style="font-size: 4.5vh;display:inline-block;position:relative;transform:translate(0%,-150%); margin: 0.75vh; top: 50%;" class="nospace">R E M E D Y</h1>
+        </center>
+        <div style="display:block;position:absolute;top:10vh;padding:5vh;width:calc(100vw - 10vh);overflow-y: scroll;">
+            <h2 class="nospace">Background:</h2>
+            <br>
+            <div class="nospace" style="display:flex;justify-content: space-between;">
+                <textarea class="hidden" id="circlecrtl" required></textarea>
+                <div style="width:33.33vw;" id="themeselect" txt="">
+                    <center>
+                        <circle id="light"></circle>
+                        <p class="nospace">light mode</p>
+                        <div class="nospace" style="background:#DADAFF;height:30vh;width:30vw;"></div>
+                    </center>
+                </div>
+                <div style="width:33.33vw;" id="themeselect" txt="a">
+                    <center>
+                        <circle id="dark"></circle>
+                        <p class="nospace">dark mode</p>
+                        <div class="nospace" style="background:#484848;height:30vh;width:30vw;"></div>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <button id="save" style="position:absolute;bottom:10vh;left:7.5vw;">save</button>
+        <div class="nospace" style="position:fixed;bottom:0;width:100vw;height:10vh;">
+            <ccenter style="left:25%;">
+                    <a href="history.html">history</a>
+            </ccenter>
+            <ccenter>
+                <a href="hub.html">
+                    <i class="fa-light fa-camera"></i>
+                </a>
+            </ccenter>
+            <ccenter style="left:75%;">
+                <a href="settings.html">settings</a>
+            </ccenter>
+        </div>
+        <script src="cordova.js"></script>
+        <script type="text/javascript" src="js/settings.js"></script>
+    </body>
+</html>

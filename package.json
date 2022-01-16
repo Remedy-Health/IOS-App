@@ -1,0 +1,44 @@
+{
+  "name": "com.madum.remedy",
+  "displayName": "Remedy",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "cordova": {
+    "platforms": [
+      "ios"
+    ],
+    "plugins": {
+      "com.virtuoworks.cordova-plugin-canvascamera": {
+        "CAMERA_USAGE_DESCRIPTION": "Display video preview"
+      },
+      "cordova-plugin-camera-preview": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-custom-config": {},
+      "cordova-plugin-webviewcolor": {}
+    }
+  },
+  "dependencies": {
+    "com.virtuoworks.cordova-plugin-canvascamera": "^1.2.0",
+    "cordova-plugin-camera-preview": "^0.12.3",
+    "cordova-plugin-compat": "^1.2.0",
+    "fs-extra": "^10.0.0",
+    "underscore": "^1.13.2",
+    "unorm": "^1.6.0",
+    "xcode": "^3.0.1"
+  },
+  "devDependencies": {
+    "cordova-custom-config": "^5.1.1",
+    "cordova-ios": "^6.2.0",
+    "cordova-plugin-statusbar": "github:apache/cordova-plugin-statusbar",
+    "cordova-plugin-webviewcolor": "^2.2.0"
+  }
+}

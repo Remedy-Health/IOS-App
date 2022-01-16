@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+        <script src="js/socket.io.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Remedy</title>
+    </head>
+    <body>
+        <textarea class="hidden" id="special" required></textarea>
+        <ccenter style="display:block;text-align:center;width:100vw;">
+            <img src="img/remedy.svg" style="width:33.33vw;" alt="Remedy">
+            <h1 style="font-size:10vw; transform: translateY(-50%);">R E M E D Y</h1>
+            <div class="nospace" id="logup" style="text-align:center; transform: translateY(-2.5vh);">
+                <input type="text" placeholder="username" style="margin-bottom: 2vh; padding-bottom: 1vh;" id="username">
+                <input type="password" placeholder="password" style="margin-bottom: 2vh; padding-bottom: 1vh;" id="password">
+                <input type="email" placeholder="email" style="margin-bottom: 2vh; padding-bottom: 1vh;" id="email">
+            </div>
+            <br>
+            <br>
+            <div id="btnwrapper" class="nospace" style="position:relative;width:100vw;">
+                <button class="openingbtnbg">I</button>
+                <button class="transparent" id="signupbtn" wantedvalue="" ree="signup">Sign Up</button>
+                <button class="transparent" id="loginbtn" wantedvalue="a" ree="login">Log In</button>
+            </div>
+        </ccenter>
+        <script type="text/javascript" src="js/index.js" defer></script>
+    </body>
+</html>
